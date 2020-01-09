@@ -34,7 +34,7 @@ function XmlToHtml($id){
 				$title = $content_page->page[$id]->title;
 				$menu = $content_page->page[$id]->menu;
 				$content = $content_page->page[$id]->content;
-
+	var_dump(count($content_page->page[$id]->menu));
 
 				// recuperation des menus pour creer un la navBar
 				$i=0; // on compte les pages
@@ -50,6 +50,7 @@ function XmlToHtml($id){
 			$data = ['title'=>$title,'nav'=>$nav,'content'=>$content];
 			return $data;			
 		}
+		
 $data = XmlToHtml($id);
 ?>
 <!-- ******************************** HTML ****************************************-->
