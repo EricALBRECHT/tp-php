@@ -34,13 +34,13 @@ function XmlToHtml($id){
 				$title = $content_page->page[$id]->title;
 				$menu = $content_page->page[$id]->menu;
 				$content = $content_page->page[$id]->content;
-	var_dump(count($content_page->page[$id]->menu));
+	//var_dump(count($content_page->page[$id]->menu));
 
 				// recuperation des menus pour creer un la navBar
 				$i=0; // on compte les pages
 				foreach ($content_page as $page) {
 				//echo $page->menu;
-				$nav = $nav.'<li class="nav-item"><a class="nav-link active" href="?id='.$i.'">'.$page->menu.'</a></li>';
+				$nav = $nav.'<li class="nav-item"><a class="nav-link active" href="'.$i.'.html">'.$page->menu.'</a></li>';
 				$i++;
 				
 				
