@@ -40,7 +40,7 @@ function XmlToHtml($id){
 				$i=0; // on compte les pages
 				foreach ($content_page as $page) {
 				//echo $page->menu;
-				$nav = $nav.'<li class="nav-item"><a class="nav-link active" href="?id='.$i.'">'.$page->menu.'</a></li>';
+				$nav = $nav.'<li class="nav-item"><a class="nav-link active" href="'.$i.'.html">'.$page->menu.'</a></li>';
 				$i++;
 				
 				
