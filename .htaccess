@@ -3,3 +3,4 @@ Options +FollowSymlinks
 # Activation du mod rewrite d'Apache 
 RewriteEngine On
 RewriteRule ^([^/]*)\.html$ /?id=$1 [L]
+
